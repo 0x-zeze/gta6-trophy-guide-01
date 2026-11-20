@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide &amp; Tracker — All 55 PS5 Trophies</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI trophies on PlayStation 5: official names, descriptions and grades, a cited guide for each, a platinum roadmap, missable flags, filters and a spoiler setting.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<header class="hero">
+  <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; Offline guide</p>
+  <h1>Leonida Trophy Guide</h1>
+  <p class="sub">All 55 trophies, with their official names, descriptions and grades, a guide for each one that cites its sources, a roadmap to the platinum, and a tracker that saves your progress in this browser. No account, no network, no Rockstar artwork: the look is our own.</p>
+  <div class="progress" id="progressBox" aria-live="polite">
+    <div class="progressText"><span id="progressCount">0 / 55 earned</span><span id="progressPct">0%</span></div>
+    <div class="progressBar"><div class="progressFill" id="progressFill" style="width:0%"></div></div>
+    <p class="progressGrades" id="progressGrades"></p>
+  </div>
+</header>
+
+<main>
+  <section class="panel" id="roadmapPanel" aria-labelledby="roadmapTitle">
+    <h2 id="roadmapTitle">Roadmap to the platinum</h2>
+    <p class="panelIntro" id="roadmapIntro"></p>
+    <dl class="facts" id="roadmapFacts"></dl>
+    <div class="stages" id="roadmapStages"></div>
+    <div class="missableCallout" id="missableCallout"></div>
+    <p class="sourcesLine">Roadmap sources: <span id="roadmapSources"></span></p>
+  </section>
+
+  <section class="panel" id="trackerPanel" aria-labelledby="trackerTitle">
+    <h2 id="trackerTitle">Trophy tracker</h2>
+    <div class="controls">
+      <label class="searchBox">Search <input type="search" id="searchInput" placeholder="Trophy name or description&hellip;" autocomplete="off"></label>
+      <div class="filters" id="filterButtons" role="group" aria-label="Filter trophies by kind">
+        <button type="button" data-filter="all" class="active">All 55</button>
+        <button type="button" data-filter="story">Story</button>
+        <button type="button" data-filter="missable">Missable</button>
+        <button type="button" data-filter="collectibles">Collectibles</button>
+        <button type="button" data-filter="activities">Activities</button>
+        <button type="button" data-filter="world">World &amp; crime</button>
+        <button type="button" data-filter="online">Online</button>
+      </div>
+      <label class="toggle"><input type="checkbox" id="spoilerToggle"> <span>Hide story spoilers — hide the names and descriptions of story trophies until I earn them</span></label>
+      <label class="toggle"><input type="checkbox" id="hideEarnedToggle"> <span>Hide earned trophies</span></label>
+      <div class="ioButtons">
+        <button type="button" id="exportBtn">Export progress (.json)</button>
+        <button type="button" id="importBtn">Import progress</button>
+        <input type="file" id="importFile" accept=".json,application/json" hidden>
+        <button type="button" id="resetBtn">Reset tracker</button>
+      </div>
+      <p class="ioNote" id="ioNote">Progress is saved in this browser (localStorage). Export downloads a file you can import back on any device.</p>
+    </div>
+    <p class="onlineNote" id="onlineNote" hidden>There are no online trophies in GTA VI: all 55 are single-player and offline, so this filter is empty on purpose. (PowerPyx, GTABase.)</p>
+    <ul class="trophyList" id="trophyList"></ul>
+    <p class="emptyNote" id="emptyNote" hidden>No trophies match this filter.</p>
+  </section>
+
+  <section class="panel" id="aboutPanel" aria-labelledby="aboutTitle">
+    <h2 id="aboutTitle">About this guide</h2>
+    <p>Trophy names, descriptions and grades are shown exactly as PlayStation publishes them, as listed by PSNProfiles and Exophase. 28 of the 55 are hidden on PlayStation until earned; this guide marks them, and the spoiler setting above hides story trophies until you earn them. Each guide is written for this entry in its own words and names its sources beside it, so you can check every fact. The game was released on 19 November 2026; where the guides were still confirming a trigger, the guide says so instead of guessing.</p>
+    <p>Works fully offline: every file this page loads lives under this folder, and it makes no network request. Your checklist lives only in your browser.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Unofficial fan guide. Not affiliated with Rockstar Games, Sony or PlayStation. No Rockstar logo, artwork or game imagery is used.</p>
+</footer>
+</body>
+</html>
